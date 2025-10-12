@@ -313,11 +313,17 @@
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="text-center reveal order-2 md:order-1">
                         <!-- PROFILE PHOTO: Updated with onerror fallback for robustness. -->
-                        <img src="https://drive.google.com/uc?id=1ph2155OCOWKQt8RZ76RgGZ85G_sUZExo" 
+                        <!-- <img src="https://drive.google.com/uc?id=1ph2155OCOWKQt8RZ76RgGZ85G_sUZExo" 
                              alt="Tanmay Chavhan" 
                              class="floating-photo rounded-full w-64 h-64 md:w-80 md:h-80 object-cover mx-auto" 
                              referrerpolicy="no-referrer"
-                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/374151/e2e8f0?font=inter&text=Profile+Photo';">
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/374151/e2e8f0?font=inter&text=Profile+Photo';"> -->
+                        <!-- Inside the About Section, look for this image tag: -->
+                        <img src="./profile.jpg" 
+                             alt="Tanmay Chavhan" 
+                             class="floating-photo rounded-full w-64 h-64 md:w-80 md:h-80 object-cover mx-auto" 
+                             referrerpolicy="no-referrer"
+                             onerror="this.onerror=null; this.src='./profile.png'; this.onerror=null; this.src='https://placehold.co/400x400/374151/e2e8f0?font=inter&text=Profile+Photo';">
                     </div>
                     <div class="reveal order-1 md:order-2">
                         <h1 class="text-4xl lg:text-6xl font-bold mb-4">Hi, I'm <span class="text-primary">Tanmay Chavhan</span></h1>
@@ -762,4 +768,5 @@
     </script>
 </body>
 </html>
+
 
